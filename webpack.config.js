@@ -8,7 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, 'web'),
     library: "FlowedSDK",
   },
-  node: {
-    fs: 'empty'
+  resolve: {
+    fallback: {
+      fs: false,
+    },
   }
 };
